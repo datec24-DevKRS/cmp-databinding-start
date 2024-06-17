@@ -11,7 +11,7 @@ export class CockpitComponent {
   @Output('bpCreated') blueprintCreated = new EventEmitter<{ serverName: string, serverContent: string }>();
   //newServerName = '';
   //newServerContent = '';
-  @ViewChild('serverContentInput', {static: true}) serverContentInput: ElementRef;
+  @ViewChild('serverContentInput', { static: true }) serverContentInput: ElementRef;
 
   onAddServer(serverNameInput: HTMLInputElement) {
     console.log(this.serverContentInput);
